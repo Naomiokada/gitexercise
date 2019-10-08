@@ -1,15 +1,26 @@
 import React from 'react';
-import {View, Text} from 'react-native'
-import styles from "./styles/AppStyles";
-import Main from "./comps/Main";
 
-const App = () => {
+import {
+  View,
+  Text,
+} from 'react-native';
+import About from './comps/About';
+import Contacts from './comps/Contacts';
+
+function App(){
   return (
     <View style={styles.app}>
+    
       <Text>Welcome to the Site!</Text>
       <Main />
+
+      <About />
+      <Contacts/>
+      
     </View>
-  );
+
+  )
 };
 
 export default App;
+ 
